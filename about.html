@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-cross" class="fa-regular fa-circle-xmark"></i>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="https://www.youtube.com/@divyansh7885">YouTube</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="about-home">
+        <h2>About DivyanScript/</h2>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <h1>Phenomenal Aspects</h1>
+        <p>DivyanScript offers innovative coding tutorials, an interactive learning platform, and a supportive community to fuel your tech creativity.</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Fellowship Program</h3>
+                <p>This program offers a transformative experience for emerging talents.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>Online Courses</h3>
+                <p>Learn Coding online at your own pace, flexibly and interactively with instructors.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Global Endorsements</h3>
+                <p>Elevate your coding skills to a global standard with our certified website!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Welcome to DivyanScript, Where We're dedicated to democratizing education and empowering learners worldwide with our diverse courses and innovative learning tools.</p>
+        <div class="about-box">
+
+            <div class="profile">
+                <img src="images/pic1.png" alt="">
+                <h6>Divyansh Srivastava</h6>
+                <p>Founder and CEO of DivyanScript</p>
+                <div class="pro-links">
+                    <br>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Courses</h3>
+            <li>Manage Resources</li>
+            <li>Powerful Content</li>
+            <li>Master Skills</li>
+            <li>Be Industry Ready</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>NEWSLETTER</h3>
+            <p>You Can Trust Us. We only send Promo Offers.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Enter your Email Address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright ©2023 All Rights Reserved | DivysnScript</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-cross').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+    </script>
+</body>
+
+</html>
